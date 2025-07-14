@@ -141,4 +141,37 @@
     font-weight: 600;
     letter-spacing: 0.01em;
   }
+
+  .concilia-logo-readable {
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    font-feature-settings: "kern" on;
+  }
+
+  .concilia-logo-modern {
+    font-family: "Poppins", "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    font-feature-settings: "kern" on;
+  }
+
+  .concilia-logo-corporate {
+    font-family: "Source Sans Pro", "Open Sans", ui-sans-serif, system-ui,
+      sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+  }
+
+  .concilia-logo-emphasized {
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    font-feature-settings: "ss01" on, "ss02" on, "cv01" on;
+  }
+
+  .concilia-logo-emphasized .letter-i {
+    font-style: italic;
+    color: oklch(0.6 0.15 160);
+  }
 }

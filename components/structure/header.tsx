@@ -23,7 +23,7 @@ export default function Header() {
             </div>
 
             <div className="flex flex-col">
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent concilia-logo">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent concilia-logo-readable">
                 ConcilIA
               </h1>
               <p className="text-xs text-muted-foreground -mt-1 hidden sm:block">
