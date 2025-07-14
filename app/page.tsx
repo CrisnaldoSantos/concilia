@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/structure/header";
 import Footer from "@/components/structure/footer";
+import Title from "@/components/landing-page/title";
+import Subtitle from "@/components/landing-page/subtitle";
 
 export default function Home() {
   return (
@@ -11,15 +13,8 @@ export default function Home() {
       <main className="flex-1 flex items-center justify-center px-4 py-16">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground">
-              Bem-vindo ao{" "}
-              <span className="text-primary concilia-logo">ConcilIA</span>
-            </h1>
-
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Inteligência Artificial para Mediação e Resolução de Conflitos
-              Pessoais
-            </p>
+            <Title />
+            <Subtitle />
           </div>
 
           <div className="space-y-6 py-8">
