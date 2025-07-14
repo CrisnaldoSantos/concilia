@@ -5,6 +5,8 @@
   <img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript" alt="TypeScript"/>
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/>
   <img src="https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white" alt="shadcn/ui"/>
+  <img src="https://img.shields.io/badge/Google-Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Gemini"/>
+  <img src="https://img.shields.io/badge/LangChain-🦜-green?style=for-the-badge" alt="LangChain"/>
 </div>
 
 <div align="center">
@@ -30,17 +32,52 @@ Promover a resolução pacífica de conflitos através de:
 
 ## 🚀 Funcionalidades
 
+### 🔍 **Análise Inteligente de Conflitos**
+
+Sistema completo de 6 etapas para análise profunda de conflitos:
+
+- **Identificação das partes** envolvidas no conflito
+- **Descrição detalhada** da situação conflituosa
+- **Perspectivas individuais** de cada pessoa envolvida
+- **Processamento por IA** usando Google Gemini
+- **Relatório completo** com soluções personalizadas
+
 ### 🤖 **Mediação Inteligente**
 
-IA especializada em mediar conflitos pessoais com neutralidade e empatia para encontrar soluções equilibradas.
+IA especializada em mediar conflitos pessoais com:
+
+- **Análise neutra e imparcial** das situações apresentadas
+- **Identificação de causas principais** dos conflitos
+- **Reconhecimento de pontos em comum** entre as partes
+- **Recomendações priorizadas** (alta, média, baixa)
+- **Próximos passos concretos** para resolução
 
 ### 💕 **Comunicação Empática**
 
-Facilita o diálogo construtivo entre as partes, promovendo entendimento mútuo e relacionamentos mais saudáveis.
+Facilita o diálogo construtivo através de:
 
-### 📖 **Soluções Personalizadas**
+- **Mensagens personalizadas** para cada pessoa envolvida
+- **Tom empático e compreensivo** adaptado ao contexto
+- **Estratégias de comunicação** específicas para cada caso
+- **Promoção do entendimento mútuo** entre as partes
 
-Estratégias customizadas baseadas no tipo de relacionamento e contexto específico do conflito apresentado.
+### � **Relatórios Profissionais**
+
+Sistema de exportação de resultados:
+
+- **Interface de impressão otimizada** para documentos formais
+- **Layout responsivo** adaptado para formato A4
+- **Opção de salvar como PDF** através do navegador
+- **Formatação profissional** com branding da ConcilIA
+
+### 🎨 **Interface Moderna**
+
+Experiência de usuário premium:
+
+- **Formulário multi-etapas** com indicador de progresso
+- **Feedback visual** durante o processamento da IA
+- **Design responsivo** para todos os dispositivos
+- **Animações suaves** e transições fluidas
 
 ---
 
@@ -67,12 +104,26 @@ Estratégias customizadas baseadas no tipo de relacionamento e contexto específ
   </tr>
 </table>
 
-### 🎨 Design System
+### 🧠 **Inteligência Artificial**
+
+- **Google Gemini AI** - Modelo de linguagem avançado para análise de conflitos
+- **LangChain** - Framework para desenvolvimento de aplicações com IA
+- **Zod** - Validação de schemas e tipagem segura para dados da IA
+
+### 🎨 **Design System & UI**
 
 - **shadcn/ui** - Componentes modernos e acessíveis
 - **Tailwind CSS** - Estilização utilitária responsiva
+- **Lucide React** - Ícones SVG otimizados e consistentes
 - **Tipografia customizada** - Inter font com distinção otimizada entre I/L
 - **Tema escuro/claro** - Suporte nativo para diferentes preferências
+
+### ⚡ **Performance & Dev Experience**
+
+- **Next.js App Router** - Roteamento moderno e otimizado
+- **TypeScript** - Tipagem estática para maior confiabilidade
+- **ESLint** - Linting e formatação de código consistente
+- **CSS Modules** - Estilos encapsulados e performance otimizada
 
 ---
 
@@ -102,7 +153,19 @@ yarn install
 pnpm install
 ```
 
-3. **Execute o servidor de desenvolvimento**
+3. **Configure as variáveis de ambiente**
+
+```bash
+cp .env.example .env.local
+```
+
+Adicione sua chave da API do Google Gemini:
+
+```env
+GOOGLE_API_KEY=sua_chave_do_google_gemini_aqui
+```
+
+4. **Execute o servidor de desenvolvimento**
 
 ```bash
 npm run dev
@@ -112,8 +175,45 @@ yarn dev
 pnpm dev
 ```
 
-4. **Acesse a aplicação**
+5. **Acesse a aplicação**
    Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
+
+---
+
+## 🎬 Como Usar
+
+### 1. **Acesse a Página Inicial**
+
+- Navegue até a landing page do ConcilIA
+- Clique no botão "Começar Análise" para iniciar
+
+### 2. **Preencha as Informações do Conflito**
+
+- **Etapa 1**: Identifique as pessoas envolvidas no conflito
+- **Etapa 2**: Descreva a situação conflituosa detalhadamente
+- **Etapa 3**: Explique a perspectiva da primeira pessoa
+- **Etapa 4**: Explique a perspectiva da segunda pessoa
+
+### 3. **Análise por IA**
+
+- A IA processa as informações fornecidas
+- Aguarde alguns segundos para o processamento completo
+- O sistema gera uma análise completa e imparcial
+
+### 4. **Visualize os Resultados**
+
+- **Resumo** do conflito analisado
+- **Causas principais** identificadas
+- **Pontos em comum** entre as partes
+- **Recomendações priorizadas** para resolução
+- **Próximos passos** concretos
+- **Mensagens personalizadas** para cada pessoa
+
+### 5. **Exporte ou Imprima**
+
+- Clique em "🖨️ Imprimir Resultado" para gerar um relatório
+- Escolha entre imprimir fisicamente ou salvar como PDF
+- Compartilhe os resultados com as partes envolvidas
 
 ---
 
@@ -144,32 +244,57 @@ pnpm dev
 ```
 concilia/
 ├── app/
-│   ├── globals.css          # Estilos globais e tema
-│   ├── layout.tsx           # Layout principal
-│   └── page.tsx             # Página inicial
+│   ├── api/
+│   │   └── analisar-conflito/
+│   │       └── route.ts      # API endpoint para análise com IA
+│   ├── analisar/
+│   │   └── page.tsx          # Página do formulário de análise
+│   ├── globals.css           # Estilos globais e tema
+│   ├── layout.tsx            # Layout principal
+│   └── page.tsx              # Página inicial/landing
 ├── components/
 │   ├── structure/
-│   │   ├── header.tsx       # Componente de cabeçalho
-│   │   └── footer.tsx       # Componente de rodapé
-│   └── ui/                  # Componentes shadcn/ui
+│   │   └── header.tsx        # Componente de cabeçalho
+│   └── ui/                   # Componentes shadcn/ui
 │       ├── button.tsx
+│       ├── card.tsx
 │       ├── input.tsx
+│       ├── progress.tsx
 │       └── textarea.tsx
 ├── lib/
-│   └── utils.ts             # Utilitários
-└── public/                  # Assets estáticos
+│   └── utils.ts              # Utilitários e configurações
+├── .env.local                # Variáveis de ambiente (não versionado)
+└── public/                   # Assets estáticos
+    └── *.svg                 # Ícones e imagens
 ```
 
 ---
 
 ## 🎯 Roadmap
 
-- [ ] **Sistema de Análise de Conflitos** - Formulário inteligente para coleta de dados
-- [ ] **Motor de IA** - Integração com modelos de linguagem para mediação
-- [ ] **Dashboard de Usuário** - Histórico e acompanhamento de conflitos
+### ✅ **Concluído**
+
+- [x] **Landing Page Moderna** - Página inicial com design atrativo
+- [x] **Sistema de Análise de Conflitos** - Formulário inteligente de 6 etapas
+- [x] **Integração com IA** - Google Gemini para análise de conflitos
+- [x] **Interface de Resultados** - Exibição estruturada das análises
+- [x] **Sistema de Impressão** - Exportação profissional de relatórios
+- [x] **Design Responsivo** - Adaptação para todos os dispositivos
+
+### 🚧 **Em Desenvolvimento**
+
+- [ ] **Autenticação de Usuários** - Sistema de login e registro
+- [ ] **Dashboard Pessoal** - Histórico e acompanhamento de conflitos
+- [ ] **Melhorias na IA** - Prompts mais específicos e contextuais
+
+### 🔮 **Futuro**
+
 - [ ] **Sistema de Notificações** - Atualizações em tempo real
 - [ ] **Modo Colaborativo** - Envolvimento de múltiplas partes
-- [ ] **Relatórios Detalhados** - Análises e insights dos conflitos
+- [ ] **Analytics Avançados** - Insights e métricas dos conflitos
+- [ ] **Integração com Calendário** - Agendamento de sessões
+- [ ] **App Mobile** - Aplicativo nativo para iOS e Android
+- [ ] **API Pública** - Integração com outras plataformas
 
 ---
 
@@ -210,3 +335,13 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 🌟 Deixe uma Star!
 
 Se este projeto te ajudou ou você achou interessante, considere deixar uma ⭐ no repositório!
+
+---
+
+## 🔑 **Obtenção da API Key do Google Gemini**
+
+1. Acesse [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Faça login com sua conta Google
+3. Clique em "Create API Key"
+4. Copie a chave gerada
+5. Cole no arquivo `.env.local` na variável `GOOGLE_API_KEY`
