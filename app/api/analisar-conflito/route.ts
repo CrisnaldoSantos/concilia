@@ -24,7 +24,6 @@ const ConflictInputSchema = z.object({
     ),
 });
 
-// Schema de saída estruturada da análise
 const ConflictAnalysisSchema = z.object({
   resumo: z.string().describe("Resumo conciso do conflito em 2-3 frases"),
   causasPrincipais: z
