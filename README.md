@@ -12,6 +12,12 @@
 <div align="center">
   <h3>🧠 Inteligência Artificial para Mediação e Resolução de Conflitos Pessoais</h3>
   <p>Uma plataforma inovadora que utiliza IA para ajudar na resolução pacífica de conflitos interpessoais</p>
+  
+  <p>
+    <a href="https://concilia-app.vercel.app" target="_blank">
+      <img src="https://img.shields.io/badge/🌐_Demo_Online-4285F4?style=for-the-badge&logo=vercel&logoColor=white" alt="Demo Online"/>
+    </a>
+  </p>
 </div>
 
 ---
@@ -123,7 +129,8 @@ Experiência de usuário premium:
 - **Next.js App Router** - Roteamento moderno e otimizado
 - **TypeScript** - Tipagem estática para maior confiabilidade
 - **ESLint** - Linting e formatação de código consistente
-- **CSS Modules** - Estilos encapsulados e performance otimizada
+- **React Context API** - Gerenciamento de estado global
+- **HTML2Canvas & jsPDF** - Geração de relatórios em PDF
 
 ---
 
@@ -176,7 +183,10 @@ pnpm dev
 ```
 
 5. **Acesse a aplicação**
-   Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
+
+   **Desenvolvimento local:** [http://localhost:3000](http://localhost:3000)
+
+   **Versão online:** [https://concilia-app.vercel.app](https://concilia-app.vercel.app)
 
 ---
 
@@ -248,12 +258,19 @@ concilia/
 │   │   └── analisar-conflito/
 │   │       └── route.ts      # API endpoint para análise com IA
 │   ├── analisar/
-│   │   └── page.tsx          # Página do formulário de análise
+│   │   ├── page.tsx          # Página do formulário de análise
+│   │   └── types.ts          # Tipos TypeScript para análise
 │   ├── globals.css           # Estilos globais e tema
 │   ├── layout.tsx            # Layout principal
 │   └── page.tsx              # Página inicial/landing
 ├── components/
+│   ├── analysis-page/
+│   │   └── steps/            # Componentes das etapas de análise
+│   ├── landing-page/
+│   │   ├── subtitle.tsx      # Subtítulo da landing page
+│   │   └── title.tsx         # Título da landing page
 │   ├── structure/
+│   │   ├── footer.tsx        # Componente de rodapé
 │   │   └── header.tsx        # Componente de cabeçalho
 │   └── ui/                   # Componentes shadcn/ui
 │       ├── button.tsx
@@ -261,9 +278,18 @@ concilia/
 │       ├── input.tsx
 │       ├── progress.tsx
 │       └── textarea.tsx
+├── contexts/
+│   └── use-analysis.context.tsx  # Context API para gerenciamento de estado
 ├── lib/
 │   └── utils.ts              # Utilitários e configurações
+├── utils/
+│   └── open-print-dialog.ts  # Utilitários para impressão
 ├── .env.local                # Variáveis de ambiente (não versionado)
+├── components.json           # Configuração do shadcn/ui
+├── eslint.config.mjs         # Configuração do ESLint
+├── next.config.ts            # Configuração do Next.js
+├── postcss.config.mjs        # Configuração do PostCSS
+├── tsconfig.json             # Configuração do TypeScript
 └── public/                   # Assets estáticos
     └── *.svg                 # Ícones e imagens
 ```
@@ -280,12 +306,16 @@ concilia/
 - [x] **Interface de Resultados** - Exibição estruturada das análises
 - [x] **Sistema de Impressão** - Exportação profissional de relatórios
 - [x] **Design Responsivo** - Adaptação para todos os dispositivos
+- [x] **Context API** - Gerenciamento de estado com React Context
+- [x] **Componentes Modulares** - Estrutura organizada em componentes
+- [x] **Deploy na Vercel** - Aplicação online e acessível
 
 ### 🚧 **Em Desenvolvimento**
 
 - [ ] **Autenticação de Usuários** - Sistema de login e registro
 - [ ] **Dashboard Pessoal** - Histórico e acompanhamento de conflitos
 - [ ] **Melhorias na IA** - Prompts mais específicos e contextuais
+- [ ] **Otimizações de Performance** - Melhorias no carregamento e responsividade
 
 ### 🔮 **Futuro**
 
